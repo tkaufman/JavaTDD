@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="UnitTests" failures="1" tests="9" time="0.508" errors="0">
+  <properties/>
+  <testcase name="shouldStoreEncryptedPassword" time="0.36" classname="com.pillartech.blog.AccountTest">
+    <failure type="org.mockito.exceptions.misusing.InvalidUseOfMatchersException" message="
+Misplaced argument matcher detected here:
+-&amp;gt; at com.pillartech.blog.AccountTest.shouldStoreEncryptedPassword(AccountTest.java:19)
+
+You cannot use argument matchers outside of verification or stubbing.
+Examples of correct usage of argument matchers:
+    when(mock.get(anyInt())).thenReturn(null);
+    doThrow(new RuntimeException()).when(mock).someVoidMethod(anyObject());
+    verify(mock).someMethod(contains(&amp;quot;foo&amp;quot;))
+
+Also, this error might show up because you use argument matchers with methods that cannot be mocked.
+Following methods *cannot* be stubbed/verified: final/private/equals()/hashCode() methods.
+">
+      <![CDATA[org.mockito.exceptions.misusing.InvalidUseOfMatchersException: 
+Misplaced argument matcher detected here:
+-> at com.pillartech.blog.AccountTest.shouldStoreEncryptedPassword(AccountTest.java:19)
+
+You cannot use argument matchers outside of verification or stubbing.
+Examples of correct usage of argument matchers:
+    when(mock.get(anyInt())).thenReturn(null);
+    doThrow(new RuntimeException()).when(mock).someVoidMethod(anyObject());
+    verify(mock).someMethod(contains("foo"))
+
+Also, this error might show up because you use argument matchers with methods that cannot be mocked.
+Following methods *cannot* be stubbed/verified: final/private/equals()/hashCode() methods.
+
+	at com.pillartech.blog.AccountTest.shouldStoreEncryptedPassword(AccountTest.java:19)
+... Removed 22 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="shouldInactivateAfterThreeFailedPasswords" time="0.015" classname="com.pillartech.blog.LoginServiceTest"/>
+  <testcase name="shouldLoginValidPasswords" time="0.0060" classname="com.pillartech.blog.LoginServiceTest"/>
+  <testcase name="shouldNotInactivateUsersAfterThreeTotalFailedPasswords_CustomMatcherApproach" time="0.01" classname="com.pillartech.blog.LoginServiceTest"/>
+  <testcase name="shouldNotInactivateUsersAfterThreeTotalFailedPasswords_RepetitiveApproach" time="0.018" classname="com.pillartech.blog.LoginServiceTest"/>
+  <testcase name="shouldNotLoginBadPasswords" time="0.0040" classname="com.pillartech.blog.LoginServiceTest"/>
+  <testcase name="shouldThrowAnExceptionIfAccountIsInactive" time="0.0020" classname="com.pillartech.blog.LoginServiceTest"/>
+  <testcase name="shouldThrowAnExceptionIfAccountIsNotFound" time="0.0020" classname="com.pillartech.blog.LoginServiceTest"/>
+  <testcase name="shouldThrowBusinessExceptionIfDatabaseIsDown" time="0.0030" classname="com.pillartech.blog.LoginServiceTest"/>
+</testsuite>

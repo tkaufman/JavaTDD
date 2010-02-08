@@ -1,0 +1,266 @@
+<html>
+<head>
+<title>TestNG:  UnitTests</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>UnitTests</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 08 15:55:09 EST 2010</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (402 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='3' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td width="30%"><b>Exception</b></td>
+</tr>
+<tr>
+<td title='com.pillartech.blog.LoginServiceTest.shouldInactivateAfterThreeFailedPasswords()'>shouldInactivateAfterThreeFailedPasswords</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.pillartech.blog.LoginServiceTest.shouldLoginValidPasswords()'>shouldLoginValidPasswords</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.pillartech.blog.LoginServiceTest.shouldNotInactivateUsersAfterThreeTotalFailedPasswords_CustomMatcherApproach()'>shouldNotInactivateUsersAfterThreeTotalFailedPasswords_CustomMatcherApproach</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.pillartech.blog.LoginServiceTest.shouldNotInactivateUsersAfterThreeTotalFailedPasswords_RepetitiveApproach()'>shouldNotInactivateUsersAfterThreeTotalFailedPasswords_RepetitiveApproach</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.pillartech.blog.LoginServiceTest.shouldNotLoginBadPasswords()'>shouldNotLoginBadPasswords</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.pillartech.blog.LoginServiceTest.shouldThrowAnExceptionIfAccountIsInactive()'>shouldThrowAnExceptionIfAccountIsInactive</td>
+<td>0</td>
+<td><div><pre>com.pillartech.blog.exception.AccountRevokedException: Account has been revoked for too many failed login attempts.
+	at com.pillartech.blog.LoginServiceImpl.login(LoginServiceImpl.java:25)
+	at com.pillartech.blog.LoginServiceTest.shouldThrowAnExceptionIfAccountIsInactive(LoginServiceTest.java:143)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:345)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1009)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2058236772", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2058236772'><pre>com.pillartech.blog.exception.AccountRevokedException: Account has been revoked for too many failed login attempts.
+	at com.pillartech.blog.LoginServiceImpl.login(LoginServiceImpl.java:25)
+	at com.pillartech.blog.LoginServiceTest.shouldThrowAnExceptionIfAccountIsInactive(LoginServiceTest.java:143)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:345)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1009)
+</pre></div></td>
+</tr>
+<tr>
+<td title='com.pillartech.blog.LoginServiceTest.shouldThrowAnExceptionIfAccountIsNotFound()'>shouldThrowAnExceptionIfAccountIsNotFound</td>
+<td>0</td>
+<td><div><pre>com.pillartech.blog.exception.AccountNotFoundException: Account with username todd was not found.
+	at com.pillartech.blog.LoginServiceImpl.findAccountByUsername(LoginServiceImpl.java:43)
+	at com.pillartech.blog.LoginServiceImpl.login(LoginServiceImpl.java:22)
+	at com.pillartech.blog.LoginServiceTest.shouldThrowAnExceptionIfAccountIsNotFound(LoginServiceTest.java:134)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:345)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1009)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2138196637", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2138196637'><pre>com.pillartech.blog.exception.AccountNotFoundException: Account with username todd was not found.
+	at com.pillartech.blog.LoginServiceImpl.findAccountByUsername(LoginServiceImpl.java:43)
+	at com.pillartech.blog.LoginServiceImpl.login(LoginServiceImpl.java:22)
+	at com.pillartech.blog.LoginServiceTest.shouldThrowAnExceptionIfAccountIsNotFound(LoginServiceTest.java:134)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:345)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1009)
+</pre></div></td>
+</tr>
+<tr>
+<td title='com.pillartech.blog.LoginServiceTest.shouldThrowBusinessExceptionIfDatabaseIsDown()'>shouldThrowBusinessExceptionIfDatabaseIsDown</td>
+<td>0</td>
+<td><div><pre>com.pillartech.blog.exception.AccountNotFoundException: Unable to find account due to underlying issue
+	at com.pillartech.blog.LoginServiceImpl.findAccountByUsername(LoginServiceImpl.java:48)
+	at com.pillartech.blog.LoginServiceImpl.login(LoginServiceImpl.java:22)
+	at com.pillartech.blog.LoginServiceTest.shouldThrowBusinessExceptionIfDatabaseIsDown(LoginServiceTest.java:149)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:345)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1009)
+Caused by: java.lang.RuntimeException
+	at com.pillartech.blog.LoginServiceImpl.findAccountByUsername(LoginServiceImpl.java:41)
+	... 31 more
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace383905448", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace383905448'><pre>com.pillartech.blog.exception.AccountNotFoundException: Unable to find account due to underlying issue
+	at com.pillartech.blog.LoginServiceImpl.findAccountByUsername(LoginServiceImpl.java:48)
+	at com.pillartech.blog.LoginServiceImpl.login(LoginServiceImpl.java:22)
+	at com.pillartech.blog.LoginServiceTest.shouldThrowBusinessExceptionIfDatabaseIsDown(LoginServiceTest.java:149)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodHelper.invokeMethod(MethodHelper.java:607)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:517)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:669)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:956)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:110)
+	at org.testng.TestRunner.runWorkers(TestRunner.java:759)
+	at org.testng.TestRunner.privateRun(TestRunner.java:592)
+	at org.testng.TestRunner.run(TestRunner.java:486)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:327)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:299)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:204)
+	at org.testng.TestNG.createAndRunSuiteRunners(TestNG.java:877)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:842)
+	at org.testng.TestNG.run(TestNG.java:751)
+	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:74)
+	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:92)
+	at org.apache.maven.surefire.Surefire.run(Surefire.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.apache.maven.surefire.booter.SurefireBooter.runSuitesInProcess(SurefireBooter.java:345)
+	at org.apache.maven.surefire.booter.SurefireBooter.main(SurefireBooter.java:1009)
+Caused by: java.lang.RuntimeException
+	at com.pillartech.blog.LoginServiceImpl.findAccountByUsername(LoginServiceImpl.java:41)
+	... 31 more
+</pre></div></td>
+</tr>
+<tr>
+<td title='com.pillartech.blog.ui.AuthenticationFilterTest.testGoingToLoginBlindlyPassesThrough()'>testGoingToLoginBlindlyPassesThrough</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.pillartech.blog.ui.AuthenticationFilterTest.testWithUserInSessionPassesThrough()'>testWithUserInSessionPassesThrough</td>
+<td>0</td>
+<td></td>
+</tr>
+<tr>
+<td title='com.pillartech.blog.ui.AuthenticationFilterTest.testWithoutUserInSessionRedirectsToLogin()'>testWithoutUserInSessionRedirectsToLogin</td>
+<td>0</td>
+<td></td>
+</tr>
+</table><p>
+</body>
+</html>

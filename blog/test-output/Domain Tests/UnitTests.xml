@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="UnitTests" failures="1" tests="2" time="0.506" errors="0">
+  <properties/>
+  <testcase name="shouldStoreEncryptedPassword" time="0.03" classname="com.pillartech.blog.AccountTest">
+    <failure type="java.lang.reflect.InvocationTargetException">
+      <![CDATA[java.lang.reflect.InvocationTargetException
+	at org.powermock.modules.testng.internal.PowerMockTestNGMethodHandler.invoke(PowerMockTestNGMethodHandler.java:48)
+	at com.pillartech.blog.AccountTest_$$_javassist_0.shouldStoreEncryptedPassword(AccountTest_$$_javassist_0.java)
+Caused by: Argument(s) are different! Wanted com.pillartech.blog.Account.encryptPassword(
+    "passwrd"
+);
+Actual invocation has different argumentscom.pillartech.blog.Account.encryptPassword(
+    "password"
+);
+.
+	at org.powermock.api.mockito.internal.invocationcontrol.MockitoMethodInvocationControl.performIntercept(MockitoMethodInvocationControl.java:238)
+	at org.powermock.api.mockito.internal.invocationcontrol.MockitoMethodInvocationControl.invoke(MockitoMethodInvocationControl.java:144)
+	at org.powermock.core.MockGateway.doMethodCall(MockGateway.java:98)
+	at org.powermock.core.MockGateway.methodCall(MockGateway.java:53)
+	at com.pillartech.blog.Account.encryptPassword(Account.java)
+	at com.pillartech.blog.AccountTest.shouldStoreEncryptedPassword(AccountTest.java:30)
+	at com.pillartech.blog.AccountTest_$$_javassist_0._d3shouldStoreEncryptedPassword(AccountTest_$$_javassist_0.java)
+	... 28 more
+... Removed 26 stack frames]]>
+    </failure>
+  </testcase>
+  <testcase name="shouldUseEncryptionForPasswordMatching" time="0.022" classname="com.pillartech.blog.AccountTest"/>
+</testsuite>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pillartech.blog.AuthorizationTest" failures="0" tests="2" time="0.047" errors="0">
+  <properties/>
+  <testcase name="shouldBeARealTestThatDealsWithManyDependencies" time="0.015" classname="com.pillartech.blog.AuthorizationTest"/>
+  <testcase name="shouldBeEasierToStubOutAMethodForTheIsAccessGranted" time="0.0030" classname="com.pillartech.blog.AuthorizationTest"/>
+</testsuite>

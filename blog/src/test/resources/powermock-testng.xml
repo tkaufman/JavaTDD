@@ -1,0 +1,8 @@
+<suite name="Domain Tests" verbose="10"
+  object-factory="org.powermock.modules.testng.PowerMockObjectFactory">
+  <test name="UnitTests">
+    <classes>
+      <class name="com.pillartech.blog.AccountTest" />
+    </classes>
+  </test>
+</suite>
