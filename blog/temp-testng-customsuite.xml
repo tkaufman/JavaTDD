@@ -1,8 +1,0 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="blog" parallel="">
-  <test verbose="2" name="com.pillartech.blog.AccountTest" annotations="JDK">
-    <classes>
-      <class name="com.pillartech.blog.AccountTest"/>
-    </classes>
-  </test>
-</suite>

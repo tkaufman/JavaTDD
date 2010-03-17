@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.pillartech.blog.ui.AuthenticationFilterTest" failures="0" tests="3" time="0.191" errors="0">
-  <properties/>
-  <testcase name="testGoingToLoginBlindlyPassesThrough" time="0.023" classname="com.pillartech.blog.ui.AuthenticationFilterTest"/>
-  <testcase name="testWithUserInSessionPassesThrough" time="0.0090" classname="com.pillartech.blog.ui.AuthenticationFilterTest"/>
-  <testcase name="testWithoutUserInSessionRedirectsToLogin" time="0.013" classname="com.pillartech.blog.ui.AuthenticationFilterTest"/>
-</testsuite>

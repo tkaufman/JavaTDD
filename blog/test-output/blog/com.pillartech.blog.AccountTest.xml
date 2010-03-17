@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.pillartech.blog.AccountTest" failures="0" tests="2" time="0.637" errors="0">
-  <properties/>
-  <testcase name="shouldStoreEncryptedPassword" time="0.038" classname="com.pillartech.blog.AccountTest"/>
-  <testcase name="shouldUseEncryptionForPasswordMatching" time="0.012" classname="com.pillartech.blog.AccountTest"/>
-</testsuite>
