@@ -103,9 +103,9 @@ public class AccountDaoTest extends AbstractTransactionalTestNGSpringContextTest
 		Account toDelete = target.create(accountFixture);
 		target.delete(toDelete);
 		flushHibernateSession();
-		int numberOfRowsFound = this.simpleJdbcTemplate.queryForInt(
+		int theNumberOfRowsFound = this.simpleJdbcTemplate.queryForInt(
 				"select count(0) from accounts where id = ?", toDelete.getId());
-		assertThat(numberOfRowsFound, is(0));
+		assertThat(theNumberOfRowsFound, is(0));
 	}
 
 	@Test

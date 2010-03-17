@@ -2,13 +2,14 @@ package com.pillartech.blog;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.Matchers.is;
-import static org.mockito.Matchers.anyString;
-import static org.mockito.Mockito.when;
+import static org.powermock.api.mockito.PowerMockito.when;
 import static org.powermock.api.mockito.PowerMockito.mockStatic;
 import static org.powermock.api.mockito.PowerMockito.verifyStatic;
 
 import org.powermock.core.classloader.annotations.PrepareForTest;
+import org.testng.IObjectFactory;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.ObjectFactory;
 import org.testng.annotations.Test;
 
 @PrepareForTest(Account.class)
@@ -20,7 +21,7 @@ public class AccountTest {
 	@BeforeMethod
 	public void prepareStaticMocks() {
 		mockStatic(Account.class);
-		when(Account.encryptPassword(anyString())).thenReturn(ENCRYPTED);		
+		when(Account.encryptPassword(UNENCRYPTED)).thenReturn(ENCRYPTED);		
 	}
 	
 	@Test
@@ -46,6 +47,11 @@ public class AccountTest {
 		Account.encryptPassword(UNENCRYPTED);
 	}
 	
+	@ObjectFactory
+	public IObjectFactory getObjectFactory() {
+		return new org.powermock.modules.testng.PowerMockObjectFactory();
+	}
+
 	// JUnit is easier than xml suites
 	/*	
 		 @RunWith(PowerMockRunner.class)

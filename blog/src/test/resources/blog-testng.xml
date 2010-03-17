@@ -1,6 +1,7 @@
 <suite name="All Blog Tests">
   <test name="UnitTests">
     <classes>
+      <class name="com.pillartech.blog.AuthorizationTest" />
       <class name="com.pillartech.blog.LoginServiceTest" />
       <class name="com.pillartech.blog.ui.AuthenticationFilterTest" />
     </classes>

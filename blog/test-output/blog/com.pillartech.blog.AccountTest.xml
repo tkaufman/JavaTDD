@@ -1,44 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.pillartech.blog.AccountTest" failures="0" tests="2" time="0.262" errors="0">
+<testsuite name="com.pillartech.blog.AccountTest" failures="0" tests="2" time="0.637" errors="0">
   <properties/>
-  <testcase name="@BeforeMethod prepareStaticMocks" time="0.0" classname="com.pillartech.blog.AccountTest">
-    <failure type="org.mockito.exceptions.misusing.InvalidUseOfMatchersException" message="
-Misplaced argument matcher detected here:
--&amp;gt; at com.pillartech.blog.AccountTest.prepareStaticMocks(AccountTest.java:20)
-
-You cannot use argument matchers outside of verification or stubbing.
-Examples of correct usage of argument matchers:
-    when(mock.get(anyInt())).thenReturn(null);
-    doThrow(new RuntimeException()).when(mock).someVoidMethod(anyObject());
-    verify(mock).someMethod(contains(&amp;quot;foo&amp;quot;))
-
-Also, this error might show up because you use argument matchers with methods that cannot be mocked.
-Following methods *cannot* be stubbed/verified: final/private/equals()/hashCode() methods.
-">
-      <![CDATA[org.mockito.exceptions.misusing.InvalidUseOfMatchersException: 
-Misplaced argument matcher detected here:
--> at com.pillartech.blog.AccountTest.prepareStaticMocks(AccountTest.java:20)
-
-You cannot use argument matchers outside of verification or stubbing.
-Examples of correct usage of argument matchers:
-    when(mock.get(anyInt())).thenReturn(null);
-    doThrow(new RuntimeException()).when(mock).someVoidMethod(anyObject());
-    verify(mock).someMethod(contains("foo"))
-
-Also, this error might show up because you use argument matchers with methods that cannot be mocked.
-Following methods *cannot* be stubbed/verified: final/private/equals()/hashCode() methods.
-
-	at com.pillartech.blog.AccountTest.prepareStaticMocks(AccountTest.java:20)
-... Removed 24 stack frames]]>
-    </failure>
-  </testcase>
-  <testcase name="@BeforeMethod prepareStaticMocks" time="0.0" classname="com.pillartech.blog.AccountTest">
-    <skipped/>
-  </testcase>
-  <testcase name="shouldStoreEncryptedPassword" time="0.0020" classname="com.pillartech.blog.AccountTest">
-    <skipped/>
-  </testcase>
-  <testcase name="shouldUseEncryptionForPasswordMatching" time="0.0020" classname="com.pillartech.blog.AccountTest">
-    <skipped/>
-  </testcase>
+  <testcase name="shouldStoreEncryptedPassword" time="0.038" classname="com.pillartech.blog.AccountTest"/>
+  <testcase name="shouldUseEncryptionForPasswordMatching" time="0.012" classname="com.pillartech.blog.AccountTest"/>
 </testsuite>

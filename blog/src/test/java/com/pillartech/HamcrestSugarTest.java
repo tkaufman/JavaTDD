@@ -47,7 +47,7 @@ public class HamcrestSugarTest {
 		assertThat(theBestStout, is(equalTo("guinness")));
 
 		assertThat(theBestStout, is("guinness"));
-		// Removing parens and crap produces:
+		// Removing parens and other ceremony produces:
 		// assert that the best stout is "guinness"
 	}
 

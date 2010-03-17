@@ -1,11 +1,12 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite thread-count="5" skipfailedinvocationCounts="false" verbose="1" name="Failed suite [blog]" junit="false" annotations="JDK" data-provider-thread-count="10">
-  <test name="com.pillartech.blog.LoginServiceTest(failed)" junit="false" annotations="JDK">
+  <test name="com.pillartech.blog.AccountTest(failed)" junit="false" annotations="JDK">
     <classes>
-      <class name="com.pillartech.blog.LoginServiceTest">
+      <class name="com.pillartech.blog.AccountTest">
         <methods>
-          <include name="shouldNotInactivateUsersAfterThreeTotalFailedPasswords_RepetitiveApproach"/>
-          <include name="setupMocksAndTargetForDefaultBehavior"/>
+          <include name="prepareStaticMocks"/>
+          <include name="shouldUseEncryptionForPasswordMatching"/>
+          <include name="shouldStoreEncryptedPassword"/>
         </methods>
       </class>
     </classes>

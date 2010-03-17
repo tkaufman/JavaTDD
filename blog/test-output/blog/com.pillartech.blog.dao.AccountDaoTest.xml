@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.pillartech.blog.dao.AccountDaoTest" failures="0" tests="10" time="2.872" errors="0">
+<testsuite name="com.pillartech.blog.dao.AccountDaoTest" failures="0" tests="10" time="3.461" errors="0">
   <properties/>
-  <testcase name="testCreateAccountAddsARow" time="0.055" classname="com.pillartech.blog.dao.AccountDaoTest"/>
-  <testcase name="testCreateAccountPopulatesAllFields" time="0.018" classname="com.pillartech.blog.dao.AccountDaoTest"/>
-  <testcase name="testCreateAccountPopulatesTheId" time="0.0040" classname="com.pillartech.blog.dao.AccountDaoTest"/>
-  <testcase name="testDeleteAccountLeavesNoTrace" time="0.012" classname="com.pillartech.blog.dao.AccountDaoTest"/>
+  <testcase name="testCreateAccountAddsARow" time="0.09" classname="com.pillartech.blog.dao.AccountDaoTest"/>
+  <testcase name="testCreateAccountPopulatesAllFields" time="0.021" classname="com.pillartech.blog.dao.AccountDaoTest"/>
+  <testcase name="testCreateAccountPopulatesTheId" time="0.0050" classname="com.pillartech.blog.dao.AccountDaoTest"/>
+  <testcase name="testDeleteAccountLeavesNoTrace" time="0.023" classname="com.pillartech.blog.dao.AccountDaoTest"/>
   <testcase name="testDeleteAccountRemovesARow" time="0.0050" classname="com.pillartech.blog.dao.AccountDaoTest"/>
-  <testcase name="testFindByUsernameLimitsByUsername" time="0.176" classname="com.pillartech.blog.dao.AccountDaoTest"/>
-  <testcase name="testFindByUsernameReturnsNullWithNothingInTheDb" time="0.0030" classname="com.pillartech.blog.dao.AccountDaoTest"/>
-  <testcase name="testFindByUsernameReturnsTheCorrectRow" time="0.0060" classname="com.pillartech.blog.dao.AccountDaoTest"/>
-  <testcase name="testUpdateChangesTheDbRow" time="0.0090" classname="com.pillartech.blog.dao.AccountDaoTest"/>
-  <testcase name="testUpdateLeavesTheSameNumberOfRows" time="0.0040" classname="com.pillartech.blog.dao.AccountDaoTest"/>
+  <testcase name="testFindByUsernameLimitsByUsername" time="0.203" classname="com.pillartech.blog.dao.AccountDaoTest"/>
+  <testcase name="testFindByUsernameReturnsNullWithNothingInTheDb" time="0.0050" classname="com.pillartech.blog.dao.AccountDaoTest"/>
+  <testcase name="testFindByUsernameReturnsTheCorrectRow" time="0.0090" classname="com.pillartech.blog.dao.AccountDaoTest"/>
+  <testcase name="testUpdateChangesTheDbRow" time="0.0060" classname="com.pillartech.blog.dao.AccountDaoTest"/>
+  <testcase name="testUpdateLeavesTheSameNumberOfRows" time="0.0050" classname="com.pillartech.blog.dao.AccountDaoTest"/>
 </testsuite>
